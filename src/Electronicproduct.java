@@ -13,9 +13,8 @@ public class Electronicproduct extends  Product {
 
     @Override
     public String toString() {
-        return "Electronicproduct{" +
-                "warranty=" + warranty +
-                "} " + super.toString();
+        return  super.toString() + "\n" +
+                "Warranty: " + warranty;
     }
 
     public int getWarranty() {

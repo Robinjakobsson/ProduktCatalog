@@ -18,8 +18,7 @@ public class Foodproduct extends Product{
 
     @Override
     public String toString() {
-        return "Foodproduct{" +
-                "expirationTime=" + expirationTime +
-                "} " + super.toString();
+        return super.toString() + "\n" +
+                "Expiration time: " + expirationTime;
     }
 }

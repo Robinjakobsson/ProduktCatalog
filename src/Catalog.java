@@ -36,6 +36,10 @@ public class Catalog {
          index++;
          System.out.println(index + ". " + p.toString());
       }
+      System.out.println("---------");
+      showAllElectronics();
+      System.out.println("---------");
+      showAllFoods();
    }
 
    /**

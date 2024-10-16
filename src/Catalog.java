@@ -6,7 +6,9 @@ import java.util.List;
  */
 public class Catalog {
    protected List<Product> productList = new ArrayList<>();
-
+   protected List<FoodProducts> foodProductsList = new ArrayList<>();
+   protected List<ElectronicProducts> electronicProductsList = new ArrayList<>();
+   int index = 0 ;
 
    /**
     * Method to add a product
@@ -29,8 +31,53 @@ public class Catalog {
     * Method to show all products
     */
    public void showAllProducts(){
-      int index = 0;
+      index = 0;
       for (Product p : productList){
+         index++;
+         System.out.println(index + ". " + p.toString());
+      }
+   }
+
+   /**
+    * Method to add a food product to the foodlist
+    * @param product Is the product
+    */
+   public void addFood(Product product){
+      foodProductsList.add(product);
+      System.out.println("Product added!");
+   }
+
+   /**
+    * Method to add a product to the Electronics list
+    * @param product is the product
+    */
+   public void addElectronic(Product product){
+      electronicProductsList.add(product);
+      System.out.println("Product added!");
+   }
+
+   /**
+    * Method to show all electronics
+    */
+   public void showAllElectronics(){
+
+      if (electronicProductsList == null){
+         System.out.println("No products to show :(");
+      }
+      for (Product p : electronicProductsList){
+         index++;
+         System.out.println(index + ". " +p.toString());
+      }
+   }
+
+   /**
+    * Method to show all foods
+    */
+   public void showAllFoods(){
+      if (foodProductsList == null){
+         System.out.println("No food, please fill my stomach");
+      }
+      for (Product p: foodProductsList){
          index++;
          System.out.println(index + ". " + p.toString());
       }

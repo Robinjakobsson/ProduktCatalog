@@ -6,8 +6,8 @@ import java.util.List;
  */
 public class Catalog {
    protected List<Product> productList = new ArrayList<>();
-   protected List<FoodProducts> foodProductsList = new ArrayList<>();
-   protected List<ElectronicProducts> electronicProductsList = new ArrayList<>();
+   protected List<Foodproduct> foodProductsList = new ArrayList<>();
+   protected List<Electronicproduct> electronicProductsList = new ArrayList<>();
    int index = 0 ;
 
    /**
@@ -42,7 +42,7 @@ public class Catalog {
     * Method to add a food product to the foodlist
     * @param product Is the product
     */
-   public void addFood(Product product){
+   public void addFood(Foodproduct product ){
       foodProductsList.add(product);
       System.out.println("Product added!");
    }
@@ -51,7 +51,7 @@ public class Catalog {
     * Method to add a product to the Electronics list
     * @param product is the product
     */
-   public void addElectronic(Product product){
+   public void addElectronic(Electronicproduct product){
       electronicProductsList.add(product);
       System.out.println("Product added!");
    }

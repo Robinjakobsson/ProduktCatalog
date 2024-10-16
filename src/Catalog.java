@@ -28,8 +28,10 @@ public class Catalog {
     * Method to show all products
     */
    public void showAllProducts(){
+      int index = 0;
       for (Product p : productList){
-         System.out.println(p.toString());
+         index++;
+         System.out.println(index + ". " + p.toString());
       }
    }
 }

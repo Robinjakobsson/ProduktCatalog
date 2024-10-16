@@ -14,6 +14,7 @@ public class Catalog {
     */
    public void addProduct (Product product){
       productList.add(product);
+      System.out.println("Product added!");
    }
 
    /**
